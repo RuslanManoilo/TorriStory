@@ -12,46 +12,69 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="/">
-                TorriStory
+    <header class="page-header">
+       <div class="container page-header__container">
+        <nav class="main-navigation">
+            <a href="/" class="logo">
+                TorriStory.
             </a>
-            
-            <ul>
-                <li>
-                    <a href="/">Головна</a>
+        
+            <ul class="navigation-site">
+                <li class="navigation-site__item">
+                    <a class="navigation-site__link" href="/">Головна</a>
                 </li>
-                <li>
-                    <a href="/">Про мене</a>
+                <li class="navigation-site__item">
+                    <a class="navigation-site__link" href="/">Про мене</a>
                 </li>
-                <li>
-                    <a href="/">Портфоліо</a>
+                <li class="navigation-site__item">
+                    <a class="navigation-site__link" href="/">Портфоліо</a>
                 </li>
-                <li>
-                    <a href="/">Контакти</a>
+                <li class="navigation-site__item">
+                    <a class="navigation-site__link" href="/">Контакти</a>
                 </li>
-                <li>
-                    <a href="/">Ціни</a>
+                <li class="navigation-site__item">
+                    <a class="navigation-site__link" href="/">Ціни</a>
                 </li>
             </ul>
         </nav>
-
-        <ul>
-            <li>
-                <a href="/">UA</a>
+        
+        <ul class="navigation-lang">
+            <li class="navigation-lang__item">
+                <a class="navigation-lang__link" href="/">UA</a>
             </li>
-            <li>
-                <a href="/">ENG</a>
+            <li class="navigation-lang__item">
+                <a class="navigation-lang__link" href="/">ENG</a>
             </li>
         </ul>
+       </div>
     </header>
 
     <main>
+        <!--Hero-->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__preview">
+                    <p class="hero__subtitle">
+                        ЛАСКАВО ПРОШУ ДО TORRISTORY ! ! !
+                    </p>
+                    <h1 class="hero__title">
+                        Найкращий візуал-менеджер твого міста
+                    </h1>
+                    <p class="hero__text">
+                        Якщо ви хочете додати своєму іміджу впевненості, 
+                        вам обов'язково варто звернутися до мене.
+                    </p>
+                    <button type="button" class="btn" data-modal-open>Заповнити анкету</button>
+                </div>
+                <div class="hero__avatar hero__avatar--curent">
+                    <img src="./images/hero-avatar.jpg" alt="Viktoriia Koval" width="370">
+                </div>
+            </div>
+        </section>
         <!--Про мене-->
         <section>
             <div>
@@ -66,8 +89,8 @@
             </div>
             <div>
                 <p>Про мене</p>
-                <h2>Найкращий візуал-менеджер твого міста</h2>
-                <h3>Якщо ви хочете додати своєму іміджу впевненості, вам обов'язково варто звернутися до мене.</h3>
+                <h2>Мене звати Вікторія...</h2>
+                <h3></h3>
                 <p>
                     Я ніколи не зупиняюся на досягнутому і прагну змін. 
                     Тому завжди «на одній хвилі» зі своїми клієнтами. 
@@ -169,7 +192,7 @@
     </main>
 
     <footer>
-        <a href="/">
+        <a href="/" class="logo">
             TorriStory
         </a>
 

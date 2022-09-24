@@ -1,0 +1,32 @@
+.navigation-site {
+    display: flex;
+    margin-left: 93px;
+}
+
+.navigation-site__item {
+    position: relative;
+    
+    &:not(:first-child) {
+        margin-left: 50px;
+    }
+}
+
+.navigation-site__link {
+    display: block;
+    padding-top: 31px;
+    padding-bottom: 32px;
+    
+    color: $primary-black-color;
+    
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    transition: color $transition;
+    
+    &:hover,
+    &:focus {
+        color: $primary-gold-color;
+    }
+}

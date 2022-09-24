@@ -1,0 +1,7 @@
+.page-header__container {
+    @include centeredFlex();
+}
+
+.main-navigation {
+    @include centeredFlex();
+}

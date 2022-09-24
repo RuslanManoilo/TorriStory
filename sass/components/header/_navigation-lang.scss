@@ -1,0 +1,32 @@
+.navigation-lang {
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+    
+    list-style: none;
+}
+
+.navigation-lang__item {
+    &:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+
+.navigation-lang__link {
+    @include centeredFlex();
+    
+    fill: currentColor;
+    color: $primary-black-color;
+    
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    transition: color $transition;
+    
+    &:hover,
+    &:focus {
+        color: $primary-blue-color;
+    }
+}
