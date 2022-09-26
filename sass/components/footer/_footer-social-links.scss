@@ -1,0 +1,54 @@
+.footer-social-links {
+    margin-left: 150px;
+}
+
+.footer-social-links__title {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 20px;
+
+    color: $primary-white-color;
+}
+
+.footer-links {
+    @include centeredFlex();
+    padding: 0;
+}
+
+.footer-links__item {
+    @include centeredFlex();
+    padding: 0;
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+.footer-links__link {
+    @include centeredFlex();
+
+    width: 44px;
+    height: 44px;
+
+    background-color: rgba(250, 250, 250, 0.2);
+    color: $primary-white-color;
+    fill: currentColor;
+    border-radius: 50%;
+
+    transition: color $transition,
+                background-color $transition;
+
+    &:hover,
+    &:focus {
+        background-color: $primary-gold-color;
+        color: $primary-white-color;
+    }
+}
+
+.footer-links__icon {
+    fill: currentColor;
+}

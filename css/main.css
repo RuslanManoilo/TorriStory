@@ -56,6 +56,11 @@ textarea {
   /*outline: 2px solid tomato;*/
 }
 
+.container--baseline {
+  display: flex;
+  align-items: baseline;
+}
+
 .btn {
   font-family: "Playfair Display";
   font-weight: 700;
@@ -96,6 +101,10 @@ textarea {
   line-height: 1.2;
   text-decoration: none;
   letter-spacing: 0.1em;
+}
+
+.logo--white {
+  color: #ffffff;
 }
 
 .navigation-site {
@@ -315,6 +324,7 @@ textarea {
 
 /*List Service from Price*/
 .list-service {
+  height: 220px;
   line-height: 1.7;
   margin-bottom: 30px;
 }
@@ -332,4 +342,98 @@ textarea {
   border-radius: 50%;
   background-image: url(../../../images/check-green.png);
   background-size: contain;
+}
+
+.footer {
+  background-color: #323241;
+}
+
+.footer--position {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.footer-social-links {
+  margin-left: 150px;
+}
+
+.footer-social-links__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-links__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.footer-links__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.footer-links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(250, 250, 250, 0.2);
+  color: #ffffff;
+  fill: currentColor;
+  border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-links__link:hover, .footer-links__link:focus {
+  background-color: #ffd700;
+  color: #ffffff;
+}
+
+.footer-links__icon {
+  fill: currentColor;
+}
+
+.footer-aside {
+  margin-left: 150px;
+}
+
+.footer-contacts {
+  display: flex;
+}
+
+.footer-contacts__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.footer-contacts__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-contacts__link:hover, .footer-contacts__link:focus {
+  color: #ffd700;
+}
+
+.footer-contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */

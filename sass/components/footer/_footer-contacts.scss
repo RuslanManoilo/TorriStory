@@ -1,0 +1,37 @@
+.footer-aside {
+    margin-left: 150px;
+}
+
+.footer-contacts {
+    display: flex;
+}
+
+.footer-contacts__item {
+    &:not(:first-child) {
+        margin-left: 50px;
+    }
+}
+    
+.footer-contacts__link {
+    @include centeredFlex();
+    
+    fill: currentColor;
+    color: $primary-white-color;
+    
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+        color: $primary-gold-color;
+    }
+}
+
+.footer-contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
