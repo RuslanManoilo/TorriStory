@@ -1,11 +1,16 @@
+// utils styles
 @import './utils/variables';
 
 @import './utils/_mixins';
 
 @import './utils/visually-hidden';
 
-@import './components/base';
+// base styles
+@import './base/base';
 
+@import './base/reset';
+
+// components styles
 @import './components/container';
 
 @import './components/btn';
