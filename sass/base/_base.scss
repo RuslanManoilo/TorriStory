@@ -1,8 +1,21 @@
 body {
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.03em;
 
     background: $primary-white-color;
-    color: $primary-text-color;
+    color: $primary-black-color;
+}
+
+.title {
+    margin-bottom: 20px;
+
+    font-family: $secondary-font;
+    font-size: 28px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 42px;
+    }
 }

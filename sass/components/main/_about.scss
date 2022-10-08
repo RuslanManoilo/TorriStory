@@ -1,0 +1,28 @@
+.about__uppertitle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+   &::before {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        border-radius: 5px;
+
+        background-color: $primary-black-color;
+    }
+}
+
+.about-desc {
+    line-height: calc(26 / 14);
+    color: $primary-text-color;
+}
+

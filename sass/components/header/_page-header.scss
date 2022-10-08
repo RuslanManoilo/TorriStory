@@ -4,4 +4,8 @@
 
 .main-navigation {
     @include centeredFlex();
+
+    @media screen and (max-width: 767px) {
+        padding: 16px 0;
+    }
 }

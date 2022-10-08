@@ -1,11 +1,12 @@
 .logo {
-    font-family: 'Playfair Display';
-    color: $primary-black-color;
+    font-family: $secondary-font;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    text-decoration: none;
     letter-spacing: 0.1em;
+    text-decoration: none;
+
+    color: $primary-black-color;
 }
 
 .logo--white {

@@ -1,32 +1,25 @@
 .hero {
-    height: 600px;
+    text-align: center;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px;
     padding-bottom: 100px;
 
-    background-color: #c4c4c4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.75),
-            rgba(47, 48, 58, 0.85)),
-        url('../../../images/hero-bg-color.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
     background-position: center;
-}
-
-.hero__container {
-    @include centeredFlex();
-}
-
-.hero__preview {
-    margin-left: auto;
-    margin-right: auto;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.85), rgba(47, 48, 58, 0.85)), url('../../../images/hero/hero-base.png');   
 }
 
 .hero__subtitle {
-    font-family: 'Playfair Display';
+    font-family: $secondary-font;
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -38,31 +31,13 @@
 }
 
 .hero__title {
-    font-family: 'Playfair Display';
-    width: 696px;
-    margin-bottom: 20px;
-
+    font-family: $secondary-font;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.35;
     letter-spacing: 0.1em;
 
+    margin-bottom: 50px;
+
     color: $primary-white-color;
-}
-
-.hero__text {
-    font-family: 'Playfair Display';
-    width: 350px;
-    margin-bottom: 35px;
-    
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.15;
-    
-    color: $primary-gold-color;
-}
-
-.hero__avatar--curent {        
-    border: 15px solid rgba(92, 134, 146, 0.35);
-    border-radius: 0px;
 }

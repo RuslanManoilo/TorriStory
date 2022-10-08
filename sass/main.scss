@@ -13,8 +13,11 @@
 // components styles
 @import './components/container';
 
+@import './components/section';
+
 @import './components/btn';
 
+// header styles
 @import './components/header/page-header';
 
 @import './components/header/logo';
@@ -23,20 +26,23 @@
 
 @import './components/header/navigation-lang';
 
+@import './components/header/menu';
+
+// Main styles // 
 @import './components/main/hero';
 
-@import './components/section';
+@import './components/main/about';
 
-@import './components/main/category';
+// @import './components/main/category';
 
-@import './components/main/price';
-
-
+// @import './components/main/price';
 
 
 
-@import './components/footer/footer';
 
-@import './components/footer/footer-social-links';
 
-@import './components/footer/footer-contacts';
+// @import './components/footer/footer';
+
+// @import './components/footer/footer-social-links';
+
+// @import './components/footer/footer-contacts';

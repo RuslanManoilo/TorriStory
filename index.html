@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TorriStory</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+        rel="stylesheet" />
+    <!-- Modern-normalize -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -50,13 +52,19 @@
                 <a class="navigation-lang__link" href="/">ENG</a>
             </li>
         </ul>
+
+        <button class="menu-button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-menu-open"></use>
+            </svg>
+        </button>
        </div>
     </header>
 
     <main>
         <!--Hero-->
         <section class="hero">
-            <div class="container hero__container">
+            <div class="container">
                 <div class="hero__preview">
                     <p class="hero__subtitle">
                         ЛАСКАВО ПРОШУ ДО TORRISTORY ! ! !
@@ -64,16 +72,60 @@
                     <h1 class="hero__title">
                         Найкращий візуал-менеджер твого міста
                     </h1>
-                    <p class="hero__text">
-                        Якщо ви хочете додати своєму іміджу впевненості, 
-                        вам обов'язково варто звернутися до мене.
-                    </p>
                     <button type="button" class="btn" data-modal-open>Заповнити анкету</button>
                 </div>
-                <div class="hero__avatar hero__avatar--curent">
-                    <img src="./images/hero-avatar.jpg" alt="Viktoriia Koval" width="370">
-                </div>
             </div>
+        </section>
+        <!--Про мене-->
+        <section class="section">
+            <div class="container">
+                <p class="about__uppertitle">Про мене</p>
+                <h2 class="title">Рада познайомитися, мене звати Вікторія.</h2>
+                <p class="about-desc">
+                    Я помітила, що багато людей мають різні невпевненості, завжди борються, порівнюючи себе з іншими,
+                    але я вважаю, що кожна людина прекрасна та унікальна. 
+                    Тому я з радістю допоможу показати, що ти особливий.
+                    Звикла ніколи не зупиняюся на досягнутому і прагну змін.
+                    Саме це допомагає мені завжди бути «на одній хвилі» зі своїми клієнтами.
+                    Я завжди готова вдосконалювати кожного, хто до мене звертається!
+                </p>
+            </div>
+        </section>
+        <!--послуги та ціна-->
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Послуги та ціни</h2>
+                <ul class="price">
+                    <li class="price__item">
+                        <h3 class="price__title">Пакет №1</h3>
+                        <h4 class="price__subtitle price__subtitle--current">$99</h4>
+                        <ul class="list-service">
+                            <li class="list-service__item">Відбір та обробка Ваших фото.</li>
+                            <li class="list-service__item">Гармонійне розташування фото в стрічці <br>(компонування).</li>
+                            <li class="list-service__item">Рекомендації щодо ведення стрічки.</li>
+                        </ul>
+                        <div class="section__btn">
+                            <button class="btn" type="button">Купити зараз</button>
+                        </div>
+                    </li>
+        
+                    <li class="price__item">
+                        <h3 class="price__title">Пакет №2</h3>
+                        <h4 class="price__subtitle price__subtitle--current">$199</h4>
+                        <ul class="list-service">
+                            <li class="list-service__item">Розпишу обов'язковий вид контенту на вашу сферу.</li>
+                            <li class="list-service__item">Пропишу тригери, які потрібні для вашої сфери <br>діяльності.</li>
+                            <li class="list-service__item">Виявлення відповідних Вам кольорів і графічних <br>елементів.</li>
+                            <li class="list-service__item">Обробка обраних мною фото для майбутньої стрічки <br>(12-15 фото).
+                            </li>
+                        </ul>
+                        <div class="section__btn">
+                            <button class="btn" type="button">Купити зараз</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
         </section>
         <!--Для кого-->
         <section class="section">
@@ -107,64 +159,6 @@
                 <div class="section__btn">
                     <button class="btn" type="button">Хочу візуал</button>
                 </div>
-            </div>
-        </section>
-        <!--послуги та ціна-->
-        <section class="section">
-            <div class="container">
-                <h2 class="section__title">Послуги та ціни</h2>
-                <ul class="price">
-                    <li class="price__item">
-                        <h3 class="price__title">Пакет №1</h3>
-                        <h4 class="price__subtitle price__subtitle--current">$99</h4>
-                        <ul class="list-service">
-                            <li class="list-service__item">Відбір та обробка Ваших фото.</li>
-                            <li class="list-service__item">Гармонійне розташування фото в стрічці <br>(компонування).</li>
-                            <li class="list-service__item">Рекомендації щодо ведення стрічки.</li>
-                        </ul>
-                        <div class="section__btn">
-                            <button class="btn" type="button">Купити зараз</button>
-                        </div>
-                    </li>
-
-                    <li class="price__item">
-                        <h3 class="price__title">Пакет №2</h3>
-                        <h4 class="price__subtitle price__subtitle--current">$199</h4>
-                        <ul class="list-service">
-                            <li class="list-service__item">Розпишу обов'язковий вид контенту на вашу сферу.</li>
-                            <li class="list-service__item">Пропишу тригери, які потрібні для вашої сфери <br>діяльності.</li>
-                            <li class="list-service__item">Виявлення відповідних Вам кольорів і графічних <br>елементів.</li>
-                            <li class="list-service__item">Обробка обраних мною фото для майбутньої стрічки <br>(12-15 фото).</li>
-                        </ul>
-                        <div class="section__btn">
-                            <button class="btn" type="button">Купити зараз</button>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            
-        </section>
-        <!--Про мене-->
-        <section>
-            <div>
-                <ul>
-                    <li>
-                        <img src="./images/my-photo-1.jpg" alt="My Photo" width="270">
-                    </li>
-                    <li>
-                        <img src="./images/my-photo-2.jpg" alt="My Photo" width="270">
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p>Про мене</p>
-                <h2>Мене звати Вікторія...</h2>
-                <h3></h3>
-                <p>
-                    Я ніколи не зупиняюся на досягнутому і прагну змін. 
-                    Тому завжди «на одній хвилі» зі своїми клієнтами. 
-                    Я завжди готова вдосконалювати кожного, хто до мене звертається!
-                </p>
             </div>
         </section>
         <!--Мої роботи-->
@@ -262,5 +256,50 @@
         </div>
     </footer>   
 
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Головна</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Контакти</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">Ціна</a>
+            </li>
+        </ul>
+    
+        <ul class="mobile-socials">
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">Instagram </a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+                <a href="#" class="mobile-socials__link">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Mobile menu -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+    </script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
