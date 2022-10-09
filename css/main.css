@@ -591,7 +591,7 @@ textarea {
   height: 24px;
   margin-right: 10px;
   border-radius: 50%;
-  background-image: url(../../../images/check-green.png);
+  background-image: url(../images/check-green.png);
   background-size: contain;
 }
 @media screen and (max-width: 1199px) {
@@ -677,6 +677,10 @@ textarea {
 .category__text {
   line-height: 1.7;
   color: #757575;
+}
+
+.portfolio {
+  background-color: #f0f0fa;
 }
 
 .footer {
