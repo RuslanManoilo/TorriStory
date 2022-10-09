@@ -1,13 +1,10 @@
-.footer-social-links {
-    margin-left: 150px;
-}
+.footer-social-links {}
 
-.footer-social-links__title {
-    font-family: 'Playfair Display';
-    font-weight: 700;
+.footer__title {
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.06em;
+    text-align: center;
 
     margin-bottom: 20px;
 
@@ -16,15 +13,11 @@
 
 .footer-links {
     @include centeredFlex();
-    padding: 0;
 }
 
 .footer-links__item {
-    @include centeredFlex();
-    padding: 0;
-
     &:not(:first-child) {
-        margin-left: 10px;
+        margin-left: 12px;
     }
 }
 
@@ -44,7 +37,7 @@
 
     &:hover,
     &:focus {
-        background-color: $primary-gold-color;
+        background-color: $primary-btn-color;
         color: $primary-white-color;
     }
 }

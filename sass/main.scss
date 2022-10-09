@@ -35,16 +35,11 @@
 
 @import './components/main/price';
 
-// @import './components/main/category';
+@import './components/main/category';
 
+// Footer styles //
+@import './components/footer/footer';
 
+@import './components/footer/footer-social-links';
 
-
-
-
-
-// @import './components/footer/footer';
-
-// @import './components/footer/footer-social-links';
-
-// @import './components/footer/footer-contacts';
+@import './components/footer/footer-contacts';

@@ -1,14 +1,12 @@
-.footer-aside {
-    margin-left: 150px;
-}
+.footer-aside {}
 
 .footer-contacts {
-    display: flex;
+    display: block;
 }
 
 .footer-contacts__item {
-    &:not(:first-child) {
-        margin-left: 50px;
+    &:not(:last-child) {
+        margin-bottom: 20px;
     }
 }
     
@@ -27,7 +25,7 @@
 
     &:hover,
     &:focus {
-        color: $primary-gold-color;
+        color: $primary-btn-color;
     }
 }
 
