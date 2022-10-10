@@ -96,12 +96,8 @@
 
 .mobile-socials {
     display: flex;
-}
-
-.mobile-socials__item {
-    &:not(:first-child) {
-        margin-left: 20px;
-    }
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .mobile-socials__link {
