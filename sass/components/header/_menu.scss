@@ -98,6 +98,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    margin-bottom: 20px;
 }
 
 .mobile-socials__link {
@@ -108,4 +110,29 @@
     text-decoration: none;
 
     color: $primary-blue-color;
+}
+
+.mobile-lang {
+    @include centeredFlex();
+    
+    gap: 20px;
+}
+
+.mobile-lang__link {
+    @include centeredFlex();
+
+    fill: currentColor;
+    color: $primary-btn-color;
+
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+        color: $primary-blue-color;
+    }
 }
